@@ -1,0 +1,14 @@
+.engine
+.fuzz
+**/__pycache__/
+.venv/
+venv/
+mother.txt
+motherland.py
+riches.py
+study.py
+./vscode/
+vscode
+.vscode
+fuzz.py
+engine.py

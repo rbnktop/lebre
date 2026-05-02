@@ -1,0 +1,10 @@
+{
+  "\\bc/\\b|\\bc\\.\\b|\\bc\\b": "com",
+  "\\bsc\\.\\b|\\bsc\\b": "sache",
+  "\\bfdo/\\b|\\bfdo\\b|\\bfd/\\b|\\bfd\\b": "fardo",
+  "\\bund/\\b|\\bund\\b|\\bunidade\\b|\\bunidades\\b": "un",
+  "\\bcx/\\b|\\bcx\\b": "caixa",
+  "\\bgr\\b": "g",
+  "\\bconc\\b|\\bconc\\.\\b": "concentrado",
+  "\\blitros\\b|\\blitro\\b": "l"
+}
