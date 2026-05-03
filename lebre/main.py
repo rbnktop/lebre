@@ -9,7 +9,6 @@ console.print(f"\n"*12)
 import time
 from rich.panel import Panel
 
-
 def main():
     with console.status("[bold blue]System initializing...\n", spinner="earth") as status:
         
@@ -17,7 +16,7 @@ def main():
         from wuzzy import Core
         
         status.update("[bold blue]Connecting to data sources...")
-        engine = Core('data.xlsx', 'abbreviations.json', 'lista.txt')
+        engine = Core('data1.xlsx', 'abbreviations.json', 'lista.txt')
         time.sleep(0.2)
 
         status.update("[bold yellow]Reading Excel sheets...")
@@ -44,11 +43,11 @@ def main():
     
     console.print()
     console.print(Panel(summary, title="[gray15]DEDUPLICATION SUMMARY", expand=False, border_style="gray11"),justify='center')
-    result, analytics, n_targets = engine.sec_fuz(clean_data)
+    result, n_targets = engine.sec_fuz(clean_data)
 
     analytic = (
         f"Number of items: {n_targets}\n"
-        f"Items with no match: {analytics}"
+        # f"Items with no match: {analytics}"
     )
     console.print(f"\n"*3)
     console.print(Panel(analytic, title="[gray15]LIST ANALYSIS", expand=False, border_style="gray11"),justify='center')
